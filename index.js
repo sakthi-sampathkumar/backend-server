@@ -1,3 +1,4 @@
+//Node.JS web server
 var app=require('http')
 var server= app.createServer(function(req,res){
     if (req.url == '/') { //check the URL of the current request
