@@ -10,7 +10,7 @@ app.get('/',(req,res)=>{
     res.send("hi and welcome")
 })
 app.get('/home', (req, res)=>{ //just viewing
-    res.send({msg:"welcome"})
+    res.send({msg:"welcome home"})
  })
  app.get('/fileread', (req, res)=>{  //to read a file
     fs.readFile('data.json', function (err, data) {
@@ -26,9 +26,10 @@ app.get('/home', (req, res)=>{ //just viewing
         if(err)
             res.send({msg:'invalid',code:err})
 
-        var mydata=JSON.parse(data)
+        let mydata=JSON.parse(data)
+        console.log(mydata);
         mydata.push(query)
-        var result=JSON.stringify(data)
+        var result=JSON.stringify(mydata)
         fs.writeFile('data.json',result, function (err) { 
             if (err)
                 console.log(err);

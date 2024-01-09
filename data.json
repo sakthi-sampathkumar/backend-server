@@ -1,14 +1,1 @@
-
-[
-    
-        {
-            "name":"John", 
-            "age":30, 
-            "city":"New York"},
-        {
-            "name":"Sakthi",
-            "age":20,
-            "city":"Sathyamangalam"
-        }
-    
-]
+[{"name":"John","age":30,"city":"New York"},{"name":"Sakthi","age":20,"city":"Sathyamangalam"},{"name":"ravi","age":"24","city":"cbe"}]
